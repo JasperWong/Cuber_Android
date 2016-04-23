@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Nexus5"
+        android:textSize="17dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000000"
+        android:id="@+id/DeviceName" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="18:ee:69:ae:d6:20"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="2dp"
+        android:textSize="14dp"
+        android:id="@+id/DeviceAddress" />
+</LinearLayout>

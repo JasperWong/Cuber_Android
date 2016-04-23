@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Cuber</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_list_devices">List of Devices</string>
+    <string name="text_pair">Pair</string>
+    <string name="title_activity_music">MusicActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_control_vertical">Control_vertical</string>
+    <string name="menu_search">搜索</string>
+    <string name="pause">暂停</string>
+    <string name="previous">重播</string>
+    <string name="next">停止</string>
+    <string name="filenoexist">文件没发现</string>
+    <string name="continues">继续</string>
+    <string name="test_song">09. Father\'s Son.mp3</string>
+    <string name="song_list">歌曲列表</string>
+    <string name="title_artist">艺术家</string>
+    <string name="title_album">专辑</string>
+    <string name="title_activity_play_my_song">正在播放</string>
+    <string name="song_progress">--：--</string>
+    <string name="song_duration">--：--</string>
+    <string name="title_songlist">歌曲</string>
+    <string name="title_activity_album_song_list">专辑歌曲</string>
+    <string name="title_activity_search">搜索结果</string>
+    <string name="album_cover">专辑封面</string>
+    <string name="no_result">无任何搜索结果，请更换关键字重试！</string>
+
+</resources>

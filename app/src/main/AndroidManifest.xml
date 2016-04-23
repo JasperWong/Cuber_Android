@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jasper.cuber" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".DeviceListActivity"
+            android:label="CUBER"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Holo.Light.Dialog" >
+        </activity>
+        <activity
+            android:name=".MusicActivity"
+            android:label="Cuber"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:launchMode="singleTask">
+
+        </activity>
+        <activity
+            android:name=".StartAcitivty"
+            android:background="@drawable/start_1"
+            android:label="Cuber"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Control_vertical"
+            android:label="CUBER"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen"
+            android:launchMode="singleTask"
+            >
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+        </activity>
+    </application>
+
+</manifest>

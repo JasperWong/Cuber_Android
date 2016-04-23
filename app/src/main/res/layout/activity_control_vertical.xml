@@ -1,0 +1,163 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shupingbeijing_1"
+    tools:context="com.jasper.cuber.Control_vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btn_list"
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/list"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_bluetooth"
+            android:layout_alignParentRight="true"
+            android:text="ble"/>
+
+        <ImageView
+            android:id="@+id/up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/up_0"
+            android:layout_centerHorizontal="true" />
+
+        <com.jasper.cuber.JoystickView
+            android:id="@+id/joystick_view"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="350dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/left_0"
+            android:layout_marginTop="105dp"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/left" />
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/right_0"
+            android:layout_marginTop="108dp"
+            android:layout_marginLeft="285dp"/>
+
+        <ImageView
+            android:id="@+id/down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/down_0"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="215dp"/>
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:rotation="270"
+            android:layout_below="@+id/down"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:thumb="@drawable/button_volume_3"/>
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/jiahao"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="250dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:src="@drawable/volume_left"
+            android:layout_below="@+id/down"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="125dp"
+            android:id="@+id/volume_left" />
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@drawable/jianhao"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="460dp"
+            android:id="@+id/jianhao"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="150dp"
+            android:src="@drawable/volume_right"
+            android:layout_below="@+id/down"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="205dp"/>
+
+
+        <SeekBar
+            android:id="@+id/music_seekbar"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/jianhao"
+            android:layout_marginTop="10dp"
+            android:thumb="@drawable/button_music_4" />
+
+        <Button
+            android:id="@+id/previous"
+            android:background="@drawable/lastsong"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:onClick="mediaplay"
+            android:layout_toLeftOf="@+id/pause"
+            android:layout_below="@+id/music_seekbar"
+            android:layout_marginTop="27dp"
+            android:layout_marginRight="30dp"/>
+
+        <Button
+            android:id="@+id/pause"
+            android:background="@drawable/pause"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:onClick="mediaplay"
+            android:layout_below="@+id/music_seekbar"
+            android:layout_marginTop="20dp"
+            android:shape="oval"
+            />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:onClick="mediaplay"
+            android:background="@drawable/nextsong"
+            android:layout_toRightOf="@+id/pause"
+            android:layout_below="@+id/music_seekbar"
+            android:layout_marginTop="27dp"
+            android:layout_marginLeft="30dp"/>
+    </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
